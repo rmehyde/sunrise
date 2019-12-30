@@ -1,0 +1,226 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #454545;
+    font-size: 1.9em;
+}
+
+.header {
+    text-align: center;
+    vertical-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    padding: .5em;
+    padding-bottom: 1.0em;
+}
+
+.status-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.transit-container {
+    /* background-color: aqua; */
+    padding: 10px;
+}
+.transit-title {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+    padding-bottom: .6em;
+}
+
+.transit-timetable {
+    display: grid;
+    grid-template-columns: min-content 1fr max-content max-content;
+    grid-row-gap: 0.25em;
+    align-items: center;
+}
+
+/* .transit-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: left;
+    vertical-align: center;
+    overflow: scroll;
+} */
+
+.route-icon-container {
+    
+}
+
+.route-icon-image {
+    height: 1.3em;;
+    width: 1.3em;
+}
+
+.route-destination {
+    padding-left: 0.7em;
+    text-align: left;
+}
+
+.transit-time {
+    /* justify-content: space-between; */
+    display:    block;
+}
+
+.transit-time-min {
+    font-size: .8em;
+    text-align: right;
+    vertical-align: center;
+    padding-right: .3em;
+}
+
+.transit-time-sec {
+    font-size: 0.5em;
+    text-align: left;
+    vertical-align: center;
+}
+
+.transit-updated {
+    text-align: left;
+    padding-top: 20px;
+    font-size: .7em
+}
+
+.time-weather-container {
+    /* width: 50%; */
+    height: 100%;
+    /* background-color: aquamarine; */
+    padding: 12px;
+    margin-bottom: 2.0em;
+}
+.datetime {
+    height: 35%;
+}
+.date {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.time {
+    font-size: 1.25em;
+}
+.weather-container {
+    display: grid;
+    grid-template-columns: min-content auto auto;
+    grid-template-rows: auto auto auto .6em auto auto;
+    grid-column-gap: 1em;
+    font-size: .75em;
+    padding-top: 2em;
+}
+
+.weather-icon {
+    height: 6em;
+    width: 6em;
+    padding: 1em;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 5;
+}
+
+.weather-summary {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 6;
+    grid-row-end: span 1;
+    text-align: center;
+}
+
+.weather-current-temp {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    display: inline-block;
+    font-size: 3.5em;
+    /* doesnt want to fit nicely because of p / q potential hangdown */
+    height: min-content;
+    width: max-content;
+}
+
+.weather-current-temp-value {
+    display: inline-block;
+    padding-right: 0.08em;
+    height: .85em;
+}
+
+.weather-current-temp-degree {
+    display: inline-block;
+    font-size: 0.4em;
+    vertical-align: text-top;
+}
+
+.weather-wind {
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    display: flex;
+    align-items: center;
+}
+
+.weather-wind-icon {
+    height: 1.5em;
+    width: 1.5em;
+    padding: .25em;
+    display: inline-block;
+    vertical-align: center;
+}
+
+.weather-wind-text {
+    display: inline-block;
+}
+
+.weather-wind-current {
+    
+}
+.weather-wind-gust {
+    font-size: 0.75em;
+}
+
+.weather-hi-lo {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+
+.weather-humidity {
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+
+.weather-feelslike {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+}
+
+.weather-precipitation {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 6;
+    grid-row-end: span 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0.25em;
+    left: 1em;
+    font-size: 0.5em;
+    color: #adadad;
+}

@@ -7,3 +7,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Credentials & Config
+mta_api_key.txt
+darksky_api_key.txt
+location.txt
+config.py
+
+# Extra Dirs
+play

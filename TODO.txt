@@ -1,0 +1,17 @@
+TODO:
+- better timetable width
+- update api refresh time / audit python scheduling
+- add stop selection
+- fix other (non-ACE) stops - icons and api
+- add sunny icon
+- make svgs inline with proper coloration
+- create config
+
+DONE:
+- add second rounding
+- fix stop alignment
+- update seconds to be smaller
+- move configs to query strings
+- add weather
+- make last updated time ago
+- attribute weather icons

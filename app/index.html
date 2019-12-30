@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Sunrise</title>
+        <link rel='stylesheet' href='/sunrise/app/styles.css'/>
+    </head>
+    <body>
+        <div class='header'>
+            <!-- <div class='header-item' id='title'>Sunrise</div> -->
+        </div>
+        <div class='status-container'>
+            <div class='time-weather-container'>
+                <div class='datetime'>
+                    <div class='date'></div>
+                    <div class='time'></div>
+                </div>
+                <div class='weather-container'>
+                    <img src='/sunrise/app/assets/weather_icons/clear-night.svg' class='weather-icon'>
+                    <div class='weather-current-temp'><!--
+                        --><div class='weather-current-temp-value'>72</div><!--
+                        --><div class='weather-current-temp-degree'>°F</div><!--
+                    --></div>
+                    <div class='weather-wind'><!--
+                        --><img src='/sunrise/app/assets/weather_icons/wind.svg' class='weather-wind-icon'><!--
+                        --><div class='weather-wind-text'><!--
+                            --><div class='weather-wind-current'>9 MPH</div><!--
+                            --><div class='weather-wind-gust'>(20 MPH Gusts)</div><!--
+                        --></div><!--
+                    --></div>
+                    <div class='weather-summary'>Clear</div>
+                    <div class='weather-humidity'>31% Humidity</div>
+                    <div class='weather-hi-lo'>76°F | 61°F</div>
+                    <div class='weather-precipitation'>10% Chance of Rain</div>
+                    <div class='weather-feelslike'>Feels Like 71°F</div>
+                </div>
+            </div>
+            <div class='transit-container'>
+                <div class='transit-title'>Stop Name</div>
+                <div class='transit-timetable'></div>
+                <div class='transit-footer'></div>
+            </div>
+        </div>
+        <div class='footer'>© 2020 Reese M.E. Hyde  /  Weather icons made by Pixel perfect at www.flaticion.com</div>
+    </body>
+    
+    <script src="/sunrise/app/scripts/sunrise.js"></script>    
+</html>

@@ -1,5 +1,5 @@
 # Sunrise
-Sunrise is a webapp that displays real-time MTA train times and the weather
+Sunrise is a web app that displays real-time MTA train times and the weather
 
 ![Screenshot](https://github.com/rmehyde/sunrise/blob/master/sunrise_screenshot.png)
 

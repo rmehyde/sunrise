@@ -1,6 +1,8 @@
 # Sunrise
 Sunrise is a webapp that displays real-time MTA train times and the weather
 
+![Screenshot](https://github.com/rmehyde/sunrise/blob/master/sunrise_screenshot.png)
+
 ## Status
 The app only currently pulls the ACE subway time feed from the MTA. Weather location is a hard-coded configuration. If you're interested in using the app for a local project, any tweaks you need should be easy. But the project is a ways off from being friendly to users not looking to run in a one-off local environment.
 

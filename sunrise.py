@@ -2,8 +2,8 @@ from os import path
 import json
 import logging
 from flask import Flask, request, send_from_directory, send_file
-from subway_time_service import SubwayTimeService
-from weather_service import WeatherService
+from api.subway_time_service import SubwayTimeService
+from api.weather_service import WeatherService
 
 STOP_ID = "A44N"
 
@@ -18,11 +18,11 @@ weather_service = WeatherService(300)
 
 @app.route("/sunrise/app/<path:path>")
 def serve_app_directory(path):
-    return send_from_directory("../app", path)
+    return send_from_directory("app", path)
 
 @app.route("/sunrise/app")
 def serve_index_page():
-    return send_file("../app/index.html")
+    return send_file("app/index.html")
 
 @app.route("/sunrise/api/subwaytimes", methods=['GET'])
 def get_subway_times():

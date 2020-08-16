@@ -11,10 +11,9 @@ You will need to supply API Keys for the [DarkSky Weather API](https://darksky.n
 
 ## Running
 
-To debug run:
+To run:
 ```
-cd api
-export FLASK_APP=sunrise_api.py
+export FLASK_APP=sunrise.py
 flask run
 ```
 

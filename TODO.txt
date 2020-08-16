@@ -4,8 +4,8 @@ TODO:
 - add stop selection
 - fix other (non-ACE) stops - icons and api
 - add sunny icon
-- make svgs inline with proper coloration
 - create config
+- refactor api/app to single
 
 DONE:
 - add second rounding
@@ -15,3 +15,5 @@ DONE:
 - add weather
 - make last updated time ago
 - attribute weather icons
+- make svgs inline with proper coloration
+- update default index to null

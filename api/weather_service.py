@@ -1,5 +1,5 @@
-from scheduled_service import ScheduledService
-import config
+from api.scheduled_service import ScheduledService
+from api import config
 
 import requests
 import time

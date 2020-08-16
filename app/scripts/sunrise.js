@@ -127,6 +127,26 @@ function updateSubwayTimes() {
     }
 }
 
+function updateSvgFromFile(path, targetElement) {
+    return fetch(path)
+        .then(res => res.text())
+        .then(data => {
+            const parser = new DOMParser();
+            return parser.parseFromString(data, 'image/svg+xml').querySelector('svg');
+        })
+        .then(newSvgElt => {
+            // remove current svg contents
+            while (targetElement.firstChild) {
+                targetElement.removeChild(targetElement.firstChild);
+            }
+            // append new svg contents
+            for (let i = 0; i < newSvgElt.children.length; i++) {
+              targetElement.appendChild(newSvgElt.children[i])
+            }
+        })
+}
+
+
 function renderWeather() {
     console.log("rendering weather")
     if (weather == null) {
@@ -134,7 +154,13 @@ function renderWeather() {
         return;
     }
     const weatherIconElt = document.querySelector('.weather-icon')
-    weatherIconElt.setAttribute('src', `/sunrise/app/assets/weather_icons/${weather.icon}.svg`)
+    if (weatherIconElt.getAttribute("id") != weather.icon) {
+        updateSvgFromFile(`/sunrise/app/assets/weather_icons/${weather.icon}.svg`, weatherIconElt);
+        weatherIconElt.setAttribute("id", weather.icon);
+    }
+
+
+
 
     const weatherSummaryElt = document.querySelector('.weather-summary')
     weatherSummaryElt.innerHTML = weather.summary

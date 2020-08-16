@@ -1,8 +1,8 @@
-from scheduled_service import ScheduledService
-import config
+from api.scheduled_service import ScheduledService
+from api import config
 
 import requests
-from gtfs_realtime_py.gtfs_realtime_pb2 import FeedMessage
+from api.gtfs_realtime_py.gtfs_realtime_pb2 import FeedMessage
 import time
 import logging
 
